@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.net.URLConnection;
+import java.nio.Buffer;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -11,30 +14,33 @@ public class ADT {
 
     public static void main(String[] args) {
 
-        stack.push("Hello.");
-        stack.push("Chicken");
-        stack.push("Dinner");
-        stack.push("Winner");
-         System.out.println(stack.peek());
-         stack.pop();
-         System.out.println(stack.peek());
-         System.out.println(stack.size());
-         System.out.println(stack.firstElement());
+        usingQueues();
+        usingStacks();
 
-         queue.add("Winner");
-         queue.add("Winner");
-         queue.add("Chicken");
-         queue.add("Dinner");
+    }
 
-         System.out.println(queue.peek());
-         String removed = (String) queue.remove();
-         System.out.println(queue.remove());
+    public static void usingStacks(){
+
+        stack.push("One two three four");
+        stack.push("I declare");
+        stack.push("A thumb war");
+        System.out.println(stack);
+        System.out.println(stack.peek());
+        System.out.println(stack.empty());
+    }
+
+    public static void usingQueues(){
+
+        queue.add("Winner");
+        queue.add("Winner");
+        queue.add("Chicken");
+        queue.add("Dinner");
+
+        System.out.println(queue);
+        System.out.println(queue.peek());
+        String removed = (String) queue.remove();
         System.out.println(queue.remove());
         System.out.println(queue.remove());
-
-        linkedList.add("Hello");
-        linkedList.add(2);
-        linkedList.add("Tired");
-        linkedList.add(4);
+        System.out.println(queue.remove());
     }
 }
