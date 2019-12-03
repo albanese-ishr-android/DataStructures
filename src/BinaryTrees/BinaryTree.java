@@ -68,4 +68,28 @@ public class BinaryTree {
             System.out.print(" " + node.data);
         }
     }
+
+
+    public int smallest(Node root){
+        while(root.left != null) {
+            root = root.left;
+        }
+
+        return  root.data;
+    }
+
+    public int largest(Node root){
+        while(root.right != null){
+            root = root.right;
+        }
+
+        return root.data;
+        //return root.data;
+    }
+
+    public void print(Node root){
+
+        
+    }
+
 }
