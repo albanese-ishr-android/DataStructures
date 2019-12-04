@@ -4,14 +4,8 @@ public class BinaryTreeDriver {
 
     public static void main(String[] args) {
         BinaryTree tree = createBinaryTree();
-       // tree.traverseInOrder(tree.root);
-       // System.out.println("");
-       // tree.traversePostOrder(tree.root);
 
-        //Node testNode = tree.root;
-        //System.out.println(tree.smallest(testNode));
-        //System.out.println(tree.largest(testNode));
-
+        System.out.println("Getting ready to print the tree.");
         tree.print(tree.root);
 
     }
