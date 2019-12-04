@@ -1,5 +1,7 @@
 package BinaryTrees;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 public class BinaryTree {
 
     public Node root;
@@ -87,9 +89,21 @@ public class BinaryTree {
         //return root.data;
     }
 
-    public void print(Node root){
+    public void print(Node node){
 
-        
+        //System.out.println("Operating on Node: " + node.data);
+        if(node == null){
+            System.out.println("return!");
+            return;
+        }
+
+        System.out.println("print called on node.left: Node- " + node.data);
+        print(node.left);
+        System.out.println("print called on node.right: Node- " + node.data);
+        print(node.right);
+        System.out.println("Here is the data: " + node.data + " ");
+
+
     }
 
 }
