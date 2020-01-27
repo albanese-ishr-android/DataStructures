@@ -16,9 +16,9 @@ public class LinkedLists {
         clientArrayList.add(secondClient);
         clientArrayList.add(thirdClient);
 
-        clientArrayList.add(firstClient);
-        clientArrayList.add(secondClient);
-        clientArrayList.add(thirdClient);
+        clientLinkedList.add(firstClient);
+        clientLinkedList.add(secondClient);
+        clientLinkedList.add(thirdClient);
 
     }
 
